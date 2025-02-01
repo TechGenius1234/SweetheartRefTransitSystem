@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MNP TO HOTEL</title>
+    <title>ROUTE NAME</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #ffebf1;
+        * {
             margin: 0;
-            padding: 50px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 100vh;
+            align-items: center;
+            background-color: #ffebf1;
+            font-family: Arial, sans-serif;
+            text-align: center;
         }
         h1 {
             color: #d63384;
-            font-size: 24px;
+            font-size: 30px;
+            padding-top: 20px;
         }
         h2 {
-            font-size: 50px;
+            font-size: 60px;
             color: black;
             margin: auto;
         }
@@ -31,6 +37,21 @@
             padding-bottom: 20px;
         }
     </style>
+    <script>
+        function goFullscreen() {
+            let elem = document.documentElement;
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { 
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { 
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { 
+                elem.msRequestFullscreen();
+            }
+        }
+        document.addEventListener("click", goFullscreen);
+    </script>
 </head>
 <body>
 
@@ -42,4 +63,3 @@
 
 </body>
 </html>
-
